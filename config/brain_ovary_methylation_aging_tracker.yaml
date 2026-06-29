@@ -1,0 +1,794 @@
+project:
+  name: "Brain and Ovary DNA Methylation Aging Clock Tracker"
+  description: >
+    Automated literature tracking for DNA methylation-based biological aging,
+    epigenetic clocks, physiological age, organ-specific clocks, brain aging,
+    ovarian aging, reproductive aging, and tissue/cell-type-specific methylation clocks.
+  language:
+    - English
+    - Chinese
+  update_frequency: weekly
+
+sources:
+  primary:
+    - pubmed
+    - biorxiv
+    - arxiv
+  recommended_extra:
+    - medrxiv
+    - google_scholar
+    - semantic_scholar
+    - crossref
+    - geo
+    - sra
+    - zenodo
+    - github
+
+core_keywords:
+  methylation:
+    - "DNA methylation"
+    - "DNAm"
+    - "methylome"
+    - "epigenome"
+    - "CpG"
+    - "CpG methylation"
+    - "methylation biomarker"
+    - "methylation signature"
+    - "methylation array"
+    - "Illumina 450K"
+    - "Illumina EPIC"
+    - "EPIC array"
+    - "EPIC v2"
+    - "bisulfite sequencing"
+    - "WGBS"
+    - "whole-genome bisulfite sequencing"
+    - "RRBS"
+    - "targeted bisulfite sequencing"
+    - "single-cell DNA methylation"
+    - "single-nucleus methylome"
+
+  aging_general:
+    - "aging"
+    - "ageing"
+    - "biological aging"
+    - "biological ageing"
+    - "biological age"
+    - "physiological age"
+    - "molecular aging"
+    - "biomarker of aging"
+    - "aging biomarker"
+    - "age acceleration"
+    - "accelerated aging"
+    - "epigenetic age acceleration"
+    - "EAA"
+    - "intrinsic epigenetic age acceleration"
+    - "IEAA"
+    - "extrinsic epigenetic age acceleration"
+    - "EEAA"
+    - "pace of aging"
+    - "aging pace"
+    - "rate of aging"
+
+  epigenetic_clocks:
+    - "epigenetic clock"
+    - "DNA methylation clock"
+    - "DNAm clock"
+    - "methylation clock"
+    - "aging clock"
+    - "biological age clock"
+    - "epigenetic aging"
+    - "epigenetic age"
+    - "DNA methylation age"
+    - "DNAm age"
+    - "methylation age"
+    - "clock CpGs"
+    - "age-associated CpGs"
+    - "age-related methylation"
+
+named_clocks:
+  first_generation:
+    - "Horvath clock"
+    - "pan-tissue clock"
+    - "Hannum clock"
+    - "Skin and Blood clock"
+    - "blood clock"
+
+  second_generation:
+    - "PhenoAge"
+    - "DNAm PhenoAge"
+    - "GrimAge"
+    - "DNAm GrimAge"
+    - "GrimAge2"
+    - "DNAm mortality score"
+    - "Lifespan Uber clock"
+
+  pace_of_aging:
+    - "DunedinPACE"
+    - "DunedinPoAm"
+    - "Pace of Aging"
+    - "methylation pace of aging"
+
+  newer_or_specialized:
+    - "AltumAge"
+    - "DeepMAge"
+    - "DeepMClock"
+    - "PC clock"
+    - "principal component clock"
+    - "principal component epigenetic clock"
+    - "Mammalian methylation clock"
+    - "Universal mammalian clock"
+    - "Systems Age"
+    - "system-specific methylation clock"
+    - "organ-specific clock"
+    - "tissue-specific clock"
+    - "cell-type-specific clock"
+
+organ_tissue_clock_keywords:
+  organ_specific:
+    - "organ-specific aging"
+    - "organ-specific clock"
+    - "organ-specific epigenetic clock"
+    - "organ age"
+    - "organ aging"
+    - "multi-organ aging"
+    - "organ-level aging"
+    - "organ-specific biological age"
+
+  tissue_specific:
+    - "tissue-specific aging"
+    - "tissue-specific clock"
+    - "tissue-specific epigenetic clock"
+    - "tissue age"
+    - "tissue aging"
+    - "multi-tissue clock"
+    - "cross-tissue clock"
+    - "pan-tissue aging"
+    - "tissue-specific DNA methylation"
+
+  cell_type_specific:
+    - "cell-type-specific aging"
+    - "cell-type-specific clock"
+    - "cell-type-specific epigenetic clock"
+    - "cellular aging"
+    - "cell type deconvolution"
+    - "cell composition"
+    - "cell-type composition"
+    - "single-cell aging"
+    - "single-nucleus aging"
+
+brain_keywords:
+  general:
+    - "brain aging"
+    - "brain ageing"
+    - "brain age"
+    - "brain biological age"
+    - "brain methylation age"
+    - "brain epigenetic age"
+    - "brain epigenetic clock"
+    - "brain DNA methylation clock"
+    - "neuroepigenetic aging"
+    - "neuroaging"
+
+  regions:
+    - "cortex"
+    - "cortical"
+    - "cortical clock"
+    - "human cortex"
+    - "prefrontal cortex"
+    - "frontal cortex"
+    - "temporal cortex"
+    - "entorhinal cortex"
+    - "hippocampus"
+    - "cerebellum"
+    - "amygdala"
+    - "striatum"
+    - "hypothalamus"
+    - "substantia nigra"
+    - "white matter"
+    - "gray matter"
+
+  cell_types:
+    - "neuron"
+    - "neuronal"
+    - "glia"
+    - "glial"
+    - "astrocyte"
+    - "microglia"
+    - "oligodendrocyte"
+    - "OPC"
+    - "endothelial cell"
+    - "brain immune cell"
+    - "single-nucleus methylome"
+    - "single-cell methylome"
+
+  diseases_and_phenotypes:
+    - "Alzheimer"
+    - "Alzheimer's disease"
+    - "dementia"
+    - "Parkinson"
+    - "Parkinson's disease"
+    - "Lewy body"
+    - "frontotemporal dementia"
+    - "cognitive decline"
+    - "cognition"
+    - "memory"
+    - "neurodegeneration"
+    - "brain atrophy"
+    - "MRI brain age"
+    - "neuroimaging"
+    - "psychiatric disorder"
+    - "depression"
+    - "schizophrenia"
+    - "bipolar disorder"
+
+ovary_reproductive_keywords:
+  general:
+    - "ovarian aging"
+    - "ovarian ageing"
+    - "reproductive aging"
+    - "female reproductive aging"
+    - "female reproductive ageing"
+    - "ovarian age"
+    - "ovarian biological age"
+    - "ovarian epigenetic age"
+    - "ovarian epigenetic clock"
+    - "ovarian DNA methylation clock"
+    - "reproductive lifespan"
+    - "reproductive longevity"
+
+  tissue_and_cells:
+    - "ovary"
+    - "ovarian tissue"
+    - "oocyte"
+    - "oocytes"
+    - "egg aging"
+    - "egg quality"
+    - "follicle"
+    - "ovarian follicle"
+    - "preantral follicle"
+    - "antral follicle"
+    - "granulosa cell"
+    - "granulosa cells"
+    - "mural granulosa cell"
+    - "cumulus cell"
+    - "cumulus cells"
+    - "cumulus-oocyte complex"
+    - "theca cell"
+    - "stromal cell"
+    - "follicular fluid"
+    - "ovarian surface epithelium"
+
+  ovarian_reserve:
+    - "ovarian reserve"
+    - "diminished ovarian reserve"
+    - "DOR"
+    - "poor ovarian response"
+    - "POR"
+    - "premature ovarian insufficiency"
+    - "POI"
+    - "premature ovarian failure"
+    - "POF"
+    - "primary ovarian insufficiency"
+    - "menopause"
+    - "perimenopause"
+    - "age at menopause"
+    - "menopausal age"
+
+  clinical_markers:
+    - "AMH"
+    - "anti-Mullerian hormone"
+    - "anti-Müllerian hormone"
+    - "AFC"
+    - "antral follicle count"
+    - "FSH"
+    - "follicle-stimulating hormone"
+    - "LH"
+    - "estradiol"
+    - "E2"
+    - "progesterone"
+    - "inhibin B"
+    - "ovarian stimulation"
+    - "controlled ovarian stimulation"
+
+  fertility_ivf:
+    - "IVF"
+    - "in vitro fertilization"
+    - "ART"
+    - "assisted reproductive technology"
+    - "ICSI"
+    - "oocyte retrieval"
+    - "mature oocyte"
+    - "MII oocyte"
+    - "embryo quality"
+    - "blastocyst"
+    - "implantation"
+    - "clinical pregnancy"
+    - "live birth"
+    - "fertility outcome"
+
+sex_hormone_endocrine_keywords:
+  - "sex hormone"
+  - "estrogen"
+  - "oestrogen"
+  - "estradiol"
+  - "progesterone"
+  - "androgen"
+  - "testosterone"
+  - "hypothalamic-pituitary-gonadal axis"
+  - "HPG axis"
+  - "endocrine aging"
+  - "menopause transition"
+  - "reproductive hormone"
+  - "hormonal aging"
+
+method_keywords:
+  modeling:
+    - "elastic net"
+    - "lasso"
+    - "ridge regression"
+    - "machine learning"
+    - "deep learning"
+    - "random forest"
+    - "gradient boosting"
+    - "XGBoost"
+    - "neural network"
+    - "autoencoder"
+    - "graph neural network"
+    - "GNN"
+    - "Bayesian model"
+    - "survival model"
+    - "Cox regression"
+    - "multi-omics model"
+    - "clock deconstruction"
+
+  validation:
+    - "training cohort"
+    - "validation cohort"
+    - "external validation"
+    - "cross-validation"
+    - "independent cohort"
+    - "replication cohort"
+    - "generalizability"
+    - "cross-platform validation"
+    - "calibration"
+    - "MAE"
+    - "mean absolute error"
+    - "correlation"
+    - "R squared"
+    - "hazard ratio"
+
+  preprocessing:
+    - "normalization"
+    - "batch effect"
+    - "ComBat"
+    - "cell composition"
+    - "cell type deconvolution"
+    - "surrogate variable"
+    - "SVA"
+    - "principal component"
+    - "probe filtering"
+    - "sex chromosome"
+    - "smoking adjustment"
+    - "technical covariates"
+
+data_keywords:
+  public_data:
+    - "GEO"
+    - "Gene Expression Omnibus"
+    - "SRA"
+    - "dbGaP"
+    - "ArrayExpress"
+    - "reprocessed dataset"
+    - "public methylation dataset"
+    - "open data"
+
+  code_availability:
+    - "GitHub"
+    - "R package"
+    - "Python package"
+    - "code availability"
+    - "source code"
+    - "software"
+    - "web calculator"
+    - "online calculator"
+
+query_templates:
+  pubmed_brain:
+    description: "Brain-specific DNA methylation aging clock search"
+    query: >
+      (("DNA methylation"[Title/Abstract] OR DNAm[Title/Abstract] OR methylome[Title/Abstract] OR CpG[Title/Abstract])
+      AND
+      ("epigenetic clock"[Title/Abstract] OR "DNA methylation age"[Title/Abstract] OR "DNAm age"[Title/Abstract] OR
+       "biological age"[Title/Abstract] OR "age acceleration"[Title/Abstract] OR "pace of aging"[Title/Abstract])
+      AND
+      (brain[Title/Abstract] OR cortex[Title/Abstract] OR cortical[Title/Abstract] OR "cortical clock"[Title/Abstract] OR
+       hippocampus[Title/Abstract] OR cerebellum[Title/Abstract] OR neuron*[Title/Abstract] OR glia[Title/Abstract] OR
+       astrocyte*[Title/Abstract] OR microglia[Title/Abstract] OR oligodendrocyte*[Title/Abstract]))
+
+  pubmed_ovary:
+    description: "Ovary and reproductive aging methylation clock search"
+    query: >
+      (("DNA methylation"[Title/Abstract] OR DNAm[Title/Abstract] OR methylome[Title/Abstract] OR CpG[Title/Abstract])
+      AND
+      ("epigenetic clock"[Title/Abstract] OR "DNA methylation age"[Title/Abstract] OR "DNAm age"[Title/Abstract] OR
+       "biological age"[Title/Abstract] OR "age acceleration"[Title/Abstract] OR "pace of aging"[Title/Abstract])
+      AND
+      (ovary[Title/Abstract] OR ovarian[Title/Abstract] OR oocyte*[Title/Abstract] OR "granulosa cell"[Title/Abstract] OR
+       "cumulus cell"[Title/Abstract] OR "follicular fluid"[Title/Abstract] OR follicle*[Title/Abstract] OR
+       "ovarian reserve"[Title/Abstract] OR AMH[Title/Abstract] OR AFC[Title/Abstract] OR IVF[Title/Abstract] OR
+       "reproductive aging"[Title/Abstract] OR menopause[Title/Abstract] OR "premature ovarian insufficiency"[Title/Abstract]))
+
+  pubmed_organ_clock:
+    description: "Organ/tissue/cell-type-specific methylation clock search"
+    query: >
+      (("DNA methylation"[Title/Abstract] OR DNAm[Title/Abstract] OR methylome[Title/Abstract] OR CpG[Title/Abstract])
+      AND
+      ("epigenetic clock"[Title/Abstract] OR "DNA methylation clock"[Title/Abstract] OR "biological age"[Title/Abstract] OR
+       "DNA methylation age"[Title/Abstract] OR "age acceleration"[Title/Abstract])
+      AND
+      ("organ-specific"[Title/Abstract] OR "tissue-specific"[Title/Abstract] OR "cell-type-specific"[Title/Abstract] OR
+       "multi-organ"[Title/Abstract] OR "multi-tissue"[Title/Abstract] OR "cross-tissue"[Title/Abstract] OR
+       "system-specific"[Title/Abstract]))
+
+  pubmed_named_clocks:
+    description: "Named clock search for brain/ovary comparator studies"
+    query: >
+      ((Horvath[Title/Abstract] OR Hannum[Title/Abstract] OR PhenoAge[Title/Abstract] OR GrimAge[Title/Abstract] OR
+        GrimAge2[Title/Abstract] OR DunedinPACE[Title/Abstract] OR DunedinPoAm[Title/Abstract] OR AltumAge[Title/Abstract])
+      AND
+      (methylation[Title/Abstract] OR DNAm[Title/Abstract])
+      AND
+      (brain[Title/Abstract] OR cortex[Title/Abstract] OR ovary[Title/Abstract] OR ovarian[Title/Abstract] OR
+       oocyte[Title/Abstract] OR granulosa[Title/Abstract] OR "reproductive aging"[Title/Abstract]))
+
+  biorxiv_arxiv_brain:
+    query: >
+      ("DNA methylation" OR DNAm OR methylome)
+      AND
+      ("epigenetic clock" OR "DNA methylation age" OR "biological age" OR "age acceleration")
+      AND
+      (brain OR cortex OR cortical OR hippocampus OR neuron OR glia OR neurodegeneration)
+
+  biorxiv_arxiv_ovary:
+    query: >
+      ("DNA methylation" OR DNAm OR methylome)
+      AND
+      ("epigenetic clock" OR "DNA methylation age" OR "biological age" OR "age acceleration")
+      AND
+      (ovary OR ovarian OR oocyte OR granulosa OR cumulus OR "follicular fluid" OR "ovarian reserve" OR IVF OR AMH)
+
+inclusion_criteria:
+  must_have_one:
+    - "DNA methylation or methylome data"
+    - "epigenetic clock, DNAm age, biological age, age acceleration, aging pace, or methylation aging biomarker"
+    - "new clock model, clock application, clock benchmarking, or clock-related biological interpretation"
+
+  preferred:
+    - "brain tissue, brain cell type, or neurodegenerative phenotype"
+    - "ovarian tissue, oocyte, granulosa cell, cumulus cell, follicular fluid, or reproductive aging phenotype"
+    - "organ-specific, tissue-specific, system-specific, or cell-type-specific aging clock"
+    - "external validation"
+    - "public data or code"
+    - "human cohort"
+    - "clear sample size and methylation platform"
+
+exclusion_criteria:
+  hard_exclude:
+    - "No DNA methylation data"
+    - "Pure transcriptomic/proteomic/metabolomic clock without methylation component"
+    - "Plant-only methylation aging"
+    - "Forensic-only age prediction without biological aging relevance"
+
+  soft_exclude:
+    - "Cancer-only study with no aging-clock interpretation"
+    - "Gestational age clock only"
+    - "Developmental age clock only"
+    - "Generic review with no brain, ovary, organ, tissue, or cell-type specificity"
+    - "Mouse-only study unless methodologically important or directly relevant to ovary/brain aging"
+
+priority_scoring:
+  high_priority_rules:
+    - "+4 if study develops a new brain, ovary, organ-specific, tissue-specific, or cell-type-specific methylation clock"
+    - "+3 if title or abstract contains brain, cortex, cortical clock, hippocampus, neuron, glia, astrocyte, microglia, or oligodendrocyte"
+    - "+3 if title or abstract contains ovary, ovarian, oocyte, granulosa cell, cumulus cell, follicular fluid, ovarian reserve, AMH, AFC, IVF, DOR, POI, or menopause"
+    - "+2 if study analyzes age acceleration rather than only chronological age prediction"
+    - "+2 if study includes external validation or independent cohort"
+    - "+2 if study links methylation age to functional endpoint such as cognition, dementia, neuroimaging, AMH, AFC, oocyte yield, embryo quality, IVF outcome, or live birth"
+    - "+1 if code is available"
+    - "+1 if data are available in GEO, SRA, dbGaP, ArrayExpress, Zenodo, or GitHub"
+    - "+1 if study handles cell composition or tissue heterogeneity explicitly"
+
+  lower_priority_rules:
+    - "-3 if forensic-only"
+    - "-3 if no methylation data"
+    - "-2 if cancer-only with no aging interpretation"
+    - "-2 if only gestational or developmental age"
+    - "-1 if review-only and not directly related to brain/ovary/organ clocks"
+    - "-1 if no sample size or method details are reported"
+
+  priority_labels:
+    - "A: must_read"
+    - "B: relevant"
+    - "C: methods_only"
+    - "D: background"
+    - "E: exclude"
+
+relevance_tags:
+  organ:
+    - "brain"
+    - "ovary"
+    - "multi-organ"
+    - "pan-tissue"
+    - "blood"
+    - "other"
+
+  clock_type:
+    - "chronological_age_clock"
+    - "biological_age_clock"
+    - "mortality_clock"
+    - "phenotypic_age_clock"
+    - "pace_of_aging_clock"
+    - "organ_specific_clock"
+    - "tissue_specific_clock"
+    - "cell_type_specific_clock"
+    - "disease_specific_clock"
+
+  study_type:
+    - "new_clock_development"
+    - "clock_application"
+    - "benchmarking"
+    - "review"
+    - "methods"
+    - "dataset_resource"
+    - "preprint"
+
+  model_species:
+    - "human"
+    - "mouse"
+    - "rat"
+    - "non-human_primate"
+    - "mammalian_multi_species"
+
+output_fields:
+  bibliographic:
+    - title
+    - authors
+    - date
+    - year
+    - source
+    - journal_or_server
+    - publication_type
+    - doi
+    - pmid
+    - preprint_id
+    - url
+
+  content_summary:
+    - abstract
+    - one_sentence_summary
+    - why_it_matters
+    - key_findings
+    - limitation
+    - relevance_to_brain_ovary_organ_clock
+
+  biological_context:
+    - species
+    - sex
+    - age_range
+    - organ_or_system
+    - tissue
+    - cell_type
+    - disease_or_condition
+    - biological_endpoint
+
+  brain_specific:
+    - brain_region
+    - brain_cell_type
+    - neurodegenerative_disease
+    - cognitive_endpoint
+    - neuroimaging_endpoint
+    - brain_pathology_endpoint
+
+  ovary_specific:
+    - ovarian_tissue_or_cell_type
+    - reproductive_stage
+    - ovarian_reserve_marker
+    - fertility_treatment_context
+    - IVF_or_ART_endpoint
+    - AMH
+    - AFC
+    - FSH
+    - oocyte_number
+    - mature_oocyte_number
+    - embryo_quality
+    - pregnancy_outcome
+    - live_birth_outcome
+
+  clock_details:
+    - clock_name
+    - clock_category
+    - target_of_clock
+    - chronological_or_biological_age
+    - age_acceleration_definition
+    - pace_of_aging_definition
+    - CpG_number
+    - selected_CpGs
+    - model_type
+    - method
+    - training_objective
+
+  data_and_methods:
+    - dataset
+    - cohort_name
+    - sample_size_total
+    - sample_size_training
+    - sample_size_validation
+    - sample_size_by_tissue
+    - methylation_platform
+    - preprocessing
+    - normalization
+    - batch_correction
+    - covariates_adjusted
+    - cell_composition_handling
+    - statistical_model
+    - machine_learning_model
+    - external_validation
+
+  performance:
+    - MAE
+    - correlation
+    - R2
+    - AUC
+    - hazard_ratio
+    - confidence_interval
+    - p_value
+    - calibration
+    - comparison_with_existing_clocks
+
+  reproducibility:
+    - code_availability
+    - code_url
+    - data_availability
+    - data_accession
+    - supplementary_tables
+    - clock_coefficients_available
+    - calculator_available
+
+  tracking:
+    - relevance_tags
+    - priority_score
+    - priority_label
+    - actionability
+    - notes
+    - follow_up_questions
+
+extraction_prompt:
+  system_instruction: >
+    Extract structured information from each paper about DNA methylation aging,
+    epigenetic clocks, biological age, organ-specific aging, brain aging,
+    ovarian aging, and reproductive aging. Prioritize studies involving brain,
+    ovary, tissue-specific clocks, cell-type-specific clocks, organ clocks,
+    age acceleration, and aging pace.
+
+  extraction_questions:
+    - "Is this paper about DNA methylation or methylome-based aging?"
+    - "Does it develop a new clock, apply an existing clock, compare clocks, or review the field?"
+    - "Which organ, tissue, or cell type is studied?"
+    - "Is the study relevant to brain aging, ovarian aging, reproductive aging, or organ-specific aging?"
+    - "Which clock is used or developed?"
+    - "What is the biological target: chronological age, biological age, mortality risk, disease risk, phenotype, or pace of aging?"
+    - "What dataset and methylation platform are used?"
+    - "What is the sample size?"
+    - "Is there external validation?"
+    - "Are code, coefficients, or data available?"
+    - "What are the major limitations?"
+    - "Why does this matter for brain/ovary methylation aging research?"
+
+deduplication_rules:
+  - "Deduplicate by DOI when available"
+  - "If DOI is missing, deduplicate by normalized title"
+  - "If preprint and peer-reviewed version both exist, keep both but mark relationship"
+  - "Prefer peer-reviewed version for final citation"
+  - "Keep preprint if it has newer data, code, or supplementary material not present in published version"
+
+alert_rules:
+  immediate_alert:
+    - "New brain-specific methylation clock"
+    - "New ovarian/reproductive methylation clock"
+    - "New granulosa/cumulus/oocyte/follicular-fluid methylation aging study"
+    - "New organ-specific or cell-type-specific DNAm clock"
+    - "Large human cohort with brain or reproductive endpoints"
+    - "Paper with public code and clock coefficients"
+
+  weekly_digest:
+    - "General epigenetic clock application"
+    - "Methodological paper on clock construction"
+    - "Review on biological age or methylation aging"
+    - "Animal study relevant to ovary or brain aging"
+
+  save_only:
+    - "Generic blood-based aging clock not linked to brain/ovary"
+    - "Forensic age estimator"
+    - "Cancer-only methylation age paper"
+    - "Gestational/developmental clock"
+
+recommended_tracking_tables:
+  papers_table:
+    columns:
+      - title
+      - year
+      - source
+      - organ_or_system
+      - tissue
+      - cell_type
+      - clock_name
+      - study_type
+      - sample_size_total
+      - methylation_platform
+      - key_findings
+      - code_availability
+      - data_availability
+      - priority_label
+
+  clocks_table:
+    columns:
+      - clock_name
+      - year
+      - target
+      - tissue_scope
+      - species
+      - training_data
+      - CpG_number
+      - model_type
+      - reported_MAE
+      - validation_data
+      - coefficients_available
+      - notes
+
+  datasets_table:
+    columns:
+      - dataset_name
+      - accession
+      - species
+      - tissue
+      - cell_type
+      - sample_size
+      - age_range
+      - disease_context
+      - methylation_platform
+      - usable_for_brain
+      - usable_for_ovary
+      - notes
+
+suggested_manual_seed_papers:
+  brain:
+    - "Human cortex DNA methylation clock"
+    - "Cortical clock"
+    - "Brain DNA methylation age acceleration and neurodegeneration"
+    - "Epigenetic age acceleration in Alzheimer's disease"
+    - "Brain-region-specific methylation aging"
+
+  ovary:
+    - "Granulosa cell DNA methylation age"
+    - "Granulosa Cell clock"
+    - "Follicular fluid epigenetic clocks"
+    - "Ovarian reserve and DNA methylation age"
+    - "Reproductive aging and methylation age acceleration"
+    - "IVF outcome and methylation aging"
+
+  general_comparators:
+    - "Horvath pan-tissue clock"
+    - "Hannum blood clock"
+    - "DNAm PhenoAge"
+    - "DNAm GrimAge"
+    - "DunedinPACE"
+    - "Mammalian methylation clocks"
+    - "Tissue-specific and cell-type-specific methylation clocks"
+
+notes:
+  - "For brain research, do not rely only on blood-based clocks; prioritize cortex, brain-region, and cell-type-specific methylation clocks."
+  - "For ovary research, include granulosa cells, cumulus cells, follicular fluid, oocytes, ovarian reserve, AMH, AFC, IVF, DOR, POI, and menopause-related terms."
+  - "Separate chronological age prediction from biological age, mortality risk, disease risk, and pace of aging."
+  - "Track whether each clock was trained in the same tissue where it is applied."
+  - "Always record whether cell-type composition was adjusted, especially for brain and ovarian tissue."
+  - "For organ clocks, distinguish true organ-specific DNAm clocks from blood-based proxies of organ aging."
