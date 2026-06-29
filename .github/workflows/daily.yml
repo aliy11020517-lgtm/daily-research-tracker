@@ -1,1 +1,40 @@
+name: Daily Research Tracker
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 8 * * *"
+      timezone: "Asia/Singapore"
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate report
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
+        run: python -m src.report
+
+      - name: Commit report
+        run: |
+          git config user.name "daily-tracker-bot"
+          git config user.email "daily-tracker-bot@example.com"
+          git add reports/
+          git commit -m "Add daily report" || echo "No changes to commit"
+          git push
