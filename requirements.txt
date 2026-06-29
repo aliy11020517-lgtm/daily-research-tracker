@@ -1,1 +1,6 @@
-
+PyYAML
+pandas
+yfinance
+requests
+feedparser
+python-dateutil
