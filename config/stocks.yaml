@@ -1,0 +1,32 @@
+# config/stocks.yaml
+# 每日追踪的股票观察名单
+# 注意：不要在这里写 API Key、密码或 Token
+
+watchlist:
+  - ticker: NVDA
+    name: NVIDIA
+    market: US
+    currency: USD
+    enabled: true
+
+  - ticker: AAPL
+    name: Apple
+    market: US
+    currency: USD
+    enabled: false
+
+  - ticker: TSM
+    name: TSMC ADR
+    market: US
+    currency: USD
+    enabled: true
+
+rules:
+  no_direct_buy_sell: true
+
+  include_scenarios:
+    - bullish
+    - neutral
+    - bearish
+
+  report_language: zh-CN
